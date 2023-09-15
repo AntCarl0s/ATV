@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 flexbox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            border: 1px solid black;
+            width: 90%;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .justify-center{
+            justify-content: center;
+        }
+
+        .justify-space{
+            justify-content: space-between;
+        }
+
+        .justify-around{
+            justify-content: space-around;
+        }
+
+        .align-center{
+            align-items: center;
+        }
+
+        .container .item{
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>aula01 - flexbox</h1>
+    <div class="container justify-around align-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    
+</body>
+</html>
